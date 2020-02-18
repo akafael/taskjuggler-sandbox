@@ -3,7 +3,7 @@
  * TaskJuggler project management tool. You can use this as a basis to
  * start your own project file.
  */
-project your_project_id "Your Project Title"  2011-11-11-0:00--0500 +4m {
+project your_project_id "Your Project Title"  2020-02-18-0:00--0500 +4m {
   # Set the default time zone for the project. If not specified, UTC
   # is used.
   timezone "America/New_York"
