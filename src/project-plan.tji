@@ -1,0 +1,20 @@
+task project "Project" {
+  task wp1 "Workpackage 1" {
+    task t1 "Task 1"
+    task t2 "Task 2"
+  }
+  task wp2 "Work package 2" {
+    depends !wp1
+    task t1 "Task 1"
+    task t2 "Task 2"
+  }
+  task deliveries "Deliveries" {
+    task "Item 1" {
+      depends !!wp1
+    }
+    task "Item 2" {
+      depends !!wp2
+    }
+  }
+}
+

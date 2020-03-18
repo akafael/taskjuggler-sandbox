@@ -1,0 +1,19 @@
+# The daily default rate of all resources. This can be overridden for each
+# resource. We specify this so we can do a good calculation of
+# the costs of the project.
+rate 400.0
+
+# This is a set of example resources.
+resource r1 "Resource 1"
+resource t1 "Team 1" {
+  managers r1
+  resource r2 "Resource 2"
+  resource r3 "Resource 3"
+}
+
+# This is a resource that does not do any work.
+resource s1 "System 1" {
+  efficiency 0.0
+  rate 600.0
+}
+

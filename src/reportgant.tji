@@ -1,0 +1,28 @@
+##
+# Gannt Only Page
+##
+
+textreport gant "gant" {
+  formats html
+  center '<[report id="gantchart"]>'
+}
+
+# A traditional Gantt chart with a project overview.
+taskreport gantchart "" {
+  header -8<-
+  ->8-
+  columns bsi { title 'WBS' },
+          name, start, end, effort, cost,
+          revenue, chart { ${TaskTip} }
+  # For this report we like to have the abbreviated weekday in front
+  # of the date. %a is the tag for this.
+  timeformat "%a %Y-%m-%d"
+  loadunit days
+  hideresource 1
+  balance cost rev
+  caption 'All effort values are in man days.'
+
+  footer -8<-
+  ->8-
+}
+
