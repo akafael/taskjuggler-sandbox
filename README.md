@@ -1,6 +1,6 @@
 # Taskjuggler
 
-Taskjuggler Dummie Project. Published [here](https://akafael.github.io/taskjuggler-sandbox/).
+Taskjuggler Project Template. Published [here](https://akafael.github.io/taskjuggler-sandbox/).
 
 ## Folder Description
 
